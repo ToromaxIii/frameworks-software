@@ -1,0 +1,11 @@
+h1 {
+    border: 2px solid gray;
+    background-color: aqua;
+
+}
+input[type="button"] {
+    width: 120px;
+    background-color: black;
+    font-size: large;
+    color: white;
+}
