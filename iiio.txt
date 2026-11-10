@@ -1,0 +1,38 @@
+// Online Java Compiler (Editor)
+// Write and run Java online using this editor.
+Import java.Util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        final int NIP_CORRECTO = 1234;
+        final int MAX_INTENTOS = 3;
+        double saldo =50000.00;
+
+        //Datos
+        int numDepositos = 0;
+        int numRetiros = 0;
+        double totalDepositado = 0;
+        double totalRetirado = 0;
+
+        // PASO 1. Validar el NIP con un while MAX 3 intentos
+        // Si se agotan los intentos: "Tarjeta bloqueada" y return;
+        System.out.println("================================");
+        System.out.println("         MI BANCO");
+        System.out.println("================================");
+
+                int intentos = 0;
+                boolean acceso = false;
+                while (intentos < MAX_INTENTOS && !acceso) {
+                    System.out.print("Ingresa tu NIP: ");
+                    int nip = sc.nextInt();
+                    intentos++;
+                    if (nip == NIP_CORRECTO) {
+                        acceso = true;
+                        System.out.println("Bienvenido.");
+                    } else { 
+                        Sytem.out.pritln("NIP incorrecto. Intentos restantes: " + (MAX_INTENTOS = intentos));
+                    }
+                }
+        // Paso 2 Menu con do-while ue se repite hasta elegir opcion 4 (Salir)
+        // Leer la opcion y usar uun switch
+}
